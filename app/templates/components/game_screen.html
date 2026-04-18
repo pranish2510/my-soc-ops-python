@@ -1,15 +1,15 @@
 <div id="game-container">
-<div class="flex flex-col min-h-full bg-gray-50">
+<div class="flex flex-col min-h-full bg-black">
     <!-- Header -->
-    <header class="flex items-center justify-between p-3 bg-white border-b border-gray-200">
+    <header class="flex items-center justify-between p-3 border-b border-white/10">
         <button
             hx-post="/reset"
             hx-target="#game-container"
             hx-swap="outerHTML"
-            class="text-gray-500 text-sm px-3 py-1.5 rounded active:bg-gray-100">
+            class="text-white text-sm px-3 py-1.5 rounded border border-white/10 bg-white/05">
             ← Back
         </button>
-        <h1 class="font-bold text-gray-900">Soc Ops</h1>
+        <h1 class="font-bold text-white text-lg tracking-[0.15em] uppercase">Soc Ops</h1>
         <div class="w-16"></div>
     </header>
 
@@ -20,7 +20,7 @@
 
     <!-- Bingo indicator -->
     {% if session.has_bingo %}
-    <div class="bg-amber-100 text-amber-800 text-center py-2 font-semibold text-sm">
+    <div class="bg-neon-green text-black text-center py-2 font-semibold text-sm rounded-full mx-4">
         🎉 BINGO! You got a line!
     </div>
     {% endif %}

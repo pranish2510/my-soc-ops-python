@@ -2,7 +2,36 @@
 
 # Soc Ops
 
-Social Bingo game for in-person mixers. Find people who match the questions and get 5 in a row!
+A lively social bingo experience designed for networking events, icebreakers, and workshop demos.
+
+Launch the game, trade stories with friends, and mark squares as you discover people who match the prompts. The first player to complete 5 in a row wins.
+
+---
+
+## ✨ Why Soc Ops?
+
+- FastAPI + Jinja2 web app with live HTMX interactions
+- Cookie-based session state for easy play across browser refreshes
+- Minimal HTML/CSS design optimized for rapid development and real-time updates
+- Built as a teaching demo for social app workflows and frontend/backend integration
+
+---
+
+## 🚀 Quick Start
+
+```bash
+uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Then open: http://localhost:8000
+
+---
+
+## 🧪 Development Checklist
+
+- `uv run ruff check .`
+- `uv run pytest`
+- `uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000`
 
 ---
 
@@ -20,6 +49,6 @@ Social Bingo game for in-person mixers. Find people who match the questions and 
 
 ---
 
-## 🚀 Getting Started
+## 📘 Want to explore?
 
-Head to **[Part 00: Overview](https://copilot-dev-days.github.io/agent-lab-python/step.html?step=00-overview)** for prerequisites and setup instructions.
+Check `app/main.py`, `app/game_logic.py`, and `app/templates/` to see how the game flow, UI components, and HTMX interactions are wired together.
